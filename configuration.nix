@@ -13,11 +13,11 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   
-  # nix.gc = {
-  # automatic = true:
-  # dates = "weekly";
-  # options = "--delete-older-than 30d";
-  #};
+  nix.gc = {
+	  automatic = true:
+	  dates = "weekly";
+	  options = "--delete-older-than 30d";
+  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
