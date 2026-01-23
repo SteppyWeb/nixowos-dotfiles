@@ -63,7 +63,9 @@
 		uwu = "echo 'UWu wHatZ datS'";
 		garbage = "sudo nix-collect-garbage -d";
 		dot = "cd ~/nixos-dotfiles";
-		dpsh = "git push github main";
+		gpsh = "git push github main";
+		note = "nano ~/notes.pdf";
+		qcm = "";
 	};
   };
 
