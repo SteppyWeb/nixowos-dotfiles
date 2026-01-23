@@ -1,13 +1,6 @@
 { config, pkgs, ... }:
 
 {
-#  imports = [
-#	inputs.niri.homeModules.niri
-#	inputs.dms.homeModules.dank-material-shell
-#	inputs.dms.homeModules.niri
-#  ];
-
-
   home.username = "thy";
   home.homeDirectory = "/home/thy";
 
@@ -45,6 +38,7 @@
 #	};
  #};
 
+
   programs.git = {
 	enable = true;
 	settings = {
@@ -74,5 +68,5 @@
   };
 
   # Let Home Manager install and manage itself.
-  # programs.home-manager.enable = true;
+   programs.home-manager.enable = true;
 }
