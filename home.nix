@@ -65,7 +65,7 @@
 		dot = "cd ~/nixos-dotfiles";
 		gpsh = "git push github main";
 		note = "nano ~/notes.pdf";
-		qcm = "";
+		qcm = "~/shellies/quickcommit.sh";
 	};
   };
 
