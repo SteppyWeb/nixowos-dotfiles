@@ -14,7 +14,7 @@
   networking.hostName = "nixos"; # Define your hostname.
   
   nix.gc = {
-	  automatic = true:
+	  automatic = true;
 	  dates = "weekly";
 	  options = "--delete-older-than 30d";
   };
@@ -51,9 +51,22 @@
    };
 
   # programs.firefox.enable = true;
+  programs.zoxide = {
+	enable = true;
+	enableBashIntegration = true;
+  };
 
+  programs.fzf.keybindings = true;
+  programs.fzf.fuzzyCompletion = true;
+  
+  services.emacs = {
+	enable = true;
+	
+  };
+  	
   #Niri Settings
   programs.niri.enable = true;
+  programs.niri.useNautilus = false;
   security.polkit.enable = true;
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.swaylock = {};
@@ -63,21 +76,37 @@
      "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
   };
   nixpkgs.config.allowUnfree = true;
-  services.displayManager.ly.enable = true;
-
+ # services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      animate = true;
+      animation = "cmatrix";
+      hide_borders = true;
+      clock = "%c";
+      bigclock = true;
+      hide_f1_commands = true;
+      # ...
+    };
+  };
+ 
+  virtualisation.waydroid = {
+      enable = true;
+      package = pkgs.waydroid-nftables;   
+  };
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
-     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+     vim 
      wget
      git
+     flatpak
      vivaldi
      vivaldi-ffmpeg-codecs
-     #home-manager
+     home-manager
      prismlauncher
      discord
      vscodium-fhs
-     waydroid
      waydroid-helper
      libreoffice-qt-fresh
      #down is niri stuffs
@@ -87,7 +116,10 @@
      mako
      swayidle
      xwayland-satellite
-     nemo
+     pcmanfm
+     pciutils
+     psmisc
+     superfile
   ];
 
   fonts.packages = with pkgs; [
