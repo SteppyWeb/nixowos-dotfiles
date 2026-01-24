@@ -57,8 +57,8 @@
 		ll = "ls -l";
 		".." = "cd ..";
 		btw = "echo i use nixos, btw";
-                rebuild = "home-manager switch --flake . | sudo nixos-rebuild switch --flake .";
-                rbdot = "home-manager switch --flake ~/nixos-dotfiles | sudo nixos-rebuild switch --flake ~/nixos-dotfiles";
+                rebuild = "sudo nixos-rebuild switch --flake .";
+                rbdot = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles";
 		flake = "nix flake update";
 		hm = "home-manager switch --flake ~/nixos-dotfiles";
 		owo = "echo 'owO wHatZ DiS'";
