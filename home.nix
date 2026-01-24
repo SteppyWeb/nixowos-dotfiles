@@ -16,6 +16,7 @@
 	pkgs.tree
 	pkgs.krita
 	pkgs.fastfetch
+	pkgs.unzip
   ];
   
   home.sessionVariables = {
