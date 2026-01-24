@@ -63,9 +63,11 @@
 		uwu = "echo 'UWu wHatZ datS'";
 		garbage = "sudo nix-collect-garbage -d";
 		dot = "cd ~/nixos-dotfiles";
+		gadd = "git add *";
+		gdiff = "git diff";		
 		gpsh = "git push github main";
 		note = "nano ~/notes.pdf";
-		qcm = "~/shellies/quickcommit.sh";
+		qcm = "~/nixos-dotfiles/shellies/quickcommit.sh";
                 wid = "niri msg pick-window";
 		chome = "nano ~/nixos-dotfiles/home.nix";
 		cflake = "nano ~/nixos-dotfiles/flake.nix";
