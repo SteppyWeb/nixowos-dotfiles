@@ -66,6 +66,10 @@
 		gpsh = "git push github main";
 		note = "nano ~/notes.pdf";
 		qcm = "~/shellies/quickcommit.sh";
+                wid = "niri msg pick-window";
+		chome = "nano ~/nixos-dotfiles/home.nix";
+		cflake = "nano ~/nixos-dotfiles/flake.nix";
+		cconfig = "nano ~/nixos-dotfiles/configuration.nix";
 	};
   };
 
