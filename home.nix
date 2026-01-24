@@ -17,6 +17,8 @@
 	pkgs.krita
 	pkgs.fastfetch
 	pkgs.unzip
+	pkgs.v4l-utils 
+	pkgs.ffmpeg
   ];
   
   home.sessionVariables = {
