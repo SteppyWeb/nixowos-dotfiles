@@ -58,9 +58,9 @@
 		".." = "cd ..";
 		btw = "echo i use nixos, btw";
                 rebuild = "sudo nixos-rebuild switch --flake .";
-                rbdot = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles";
+                rbdot = "sudo nixos-rebuild switch --flake ~/nixowos-dotfiles";
 		flake = "nix flake update";
-		hm = "home-manager switch --flake ~/nixos-dotfiles";
+		hm = "home-manager switch --flake ~/nixowos-dotfiles";
 		owo = "echo 'owO wHatZ DiS'";
 		uwu = "echo 'UWu wHatZ datS'";
 		garbage = "sudo nix-collect-garbage -d";
@@ -69,11 +69,11 @@
 		gdiff = "git diff";		
 		gpsh = "git push github main";
 		note = "nano ~/notes.pdf";
-		qcm = "~/nixos-dotfiles/shellies/quickcommit.sh";
+		qcm = "~/nixowos-dotfiles/shellies/quickcommit.sh";
                 wid = "niri msg pick-window";
-		chome = "nano ~/nixos-dotfiles/home.nix";
-		cflake = "nano ~/nixos-dotfiles/flake.nix";
-		cconfig = "nano ~/nixos-dotfiles/configuration.nix";
+		chome = "nano ~/nixowos-dotfiles/home.nix";
+		cflake = "nano ~/nixowos-dotfiles/flake.nix";
+		cconfig = "nano ~/nixowos-dotfiles/configuration.nix";
 	};
   };
 
