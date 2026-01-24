@@ -48,9 +48,9 @@
   
   nixpkgs.config.allowUnfree = true;
   
-  #services.displayManager.ly.enable = true;
+  services.displayManager.ly.enable = true;
   #services.greetd.useTextGreeter = true;
-  services.displayManager.lemurs.enable = true;
+  #services.displayManager.lemurs.enable = true;
 
 
   programs.firefox.enable = true;
