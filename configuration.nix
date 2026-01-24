@@ -21,6 +21,15 @@
   #        options = "--delete-older-than 30d";
   #};
 
+  zramSwap = {
+	enable = true;
+	priority = 100;
+	algorithm = "lz4";
+	memoryPercent = 50;
+  };
+
+
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Configure network connections interactively with nmcli or nmtui.

@@ -64,7 +64,7 @@
 		owo = "echo 'owO wHatZ DiS'";
 		uwu = "echo 'UWu wHatZ datS'";
 		garbage = "sudo nix-collect-garbage -d";
-		dot = "cd ~/nixos-dotfiles";
+		dot = "cd ~/nixowos-dotfiles";
 		gadd = "git add *";
 		gdiff = "git diff";		
 		gpsh = "git push github main";
