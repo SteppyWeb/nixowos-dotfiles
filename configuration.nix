@@ -43,14 +43,14 @@
 
   users.users.thy = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "input" "networkmanager" ]; 
+    extraGroups = [ "wheel" "input" "networkmanager" "seat" ]; 
   };
   
   nixpkgs.config.allowUnfree = true;
   
   services.displayManager.ly.enable = true;
-  #services.greetd.useTextGreeter = true;
-  #services.displayManager.lemurs.enable = true;
+  # services.greetd.useTextGreeter = true;
+  # services.displayManager.lemurs.enable = true;
 
 
   programs.firefox.enable = true;
